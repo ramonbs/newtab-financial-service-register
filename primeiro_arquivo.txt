@@ -1,0 +1,2 @@
+Este é meu documento para registro do que estou aprendendo no módulo de GitHub no Newtab Academy.
+Primeiramente estou me familiarizando com o ambiente, e no dia 02/05/2022, no meu primeiro acesso, criei meu repositório público e este primeiro arquivo.

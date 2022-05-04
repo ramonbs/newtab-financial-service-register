@@ -1,2 +1,9 @@
 Este é meu documento para registro do que estou aprendendo no módulo de GitHub no Newtab Academy.
-Primeiramente estou me familiarizando com o ambiente, e no dia 02/05/2022, no meu primeiro acesso, criei meu repositório público e este primeiro arquivo.
+Primeiramente estou me familiarizando com o ambiente, no meu primeiro acesso, criei meu repositório público e este primeiro arquivo.
+Durante os 3 primeiros tópicos do módulo de GIT, aprendi o que são VCS e DVCS, características principais do GIT, assim como realizar a instalação no Windows.
+Os próximos tópicos	trataram de ensinar alguns comandos inicias, tais como: git add, git branch, git commit.
+Assim como, o gitignore também foi passado, uma ferramente no qual possibilita a capacidade de se "ignorar" alguns arquivos ou pasta para que não ocorra nenhuma modificação nelas. As tags também são usadas com a finalidade de se organizar e dividir o código, como por exemplo em versões.
+Na aula de Criar repositório, foi firmado algumas noções de como se criar um novo repositório do zero, e ensinando as diferenças entre um repositório público ou privado.
+Já para o envio de repositório, o tópico relata o comando git push para realizar uma cópia para nuvem. Para isso, é necessário inicialmente utilizar o comando git status para se verificar se o arquivo está modificado ou não, se sim, utiliza-se o comando git add . e em seguida o git commit -m "NOME DO COMMIT" para se commitar o arquivo. Em seguida, é necessário enviar o projeto com o git push ao site GitHub (servidor remoto). 
+Para finalizar, a realização da merge pode ser realizada pelo próprio site GitHub, quando houver duas branch diferentes.
+Obs. Também foram apresentados alguns programas com GitHub Page e as ferramentas gráficas para facilitar a visualização de todo o processo.

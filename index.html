@@ -11,9 +11,9 @@
     <!--Estrutura META charset para definir a regionalização das letras tais como ç, ~ e etc-->
     <meta name="description" content="Aplicativo para controle financeiro">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
-    <title>CSS</title>
     <style>
         /*Todo código aqui dentro é css*/
         
@@ -252,8 +252,16 @@
             top: 30px;
             background: #FFFFFF;
         }
+        
+        footer {
+            position: absolute;
+            width: 1500px;
+            height: 8px;
+            left: 0px;
+            top: 992px;
+            background: #333333;
+        }
     </style>
-
 
     <script type="text/javascript">
     </script>
@@ -278,71 +286,71 @@
         </div>
     </header>
 
-    <div class="flex" id="sec1">
-        <div class="formulario">
-            <h3 id="novaTransacao">Nova Transação</h3>
-            <div><label class="label1">Tipo da Transação</label></div>
-            <div><select class="select1"><option>Compra</option><option>Venda</option></select></div>
-            <div><label class="label2">Nome da Mercadoria</label></div>
-            <div><input type="text" class="input1" placeholder="Ex. Jóia"></div>
-            <div><label class="label3">Valor da transação</label></div>
-            <div><input type="text" class="input2" placeholder="R$"></div>
-        </div>
-        <div class="buttom-container">
-            <button type="button" class="button">
+    <form>
+        <div class="flex" id="sec1">
+            <div class="formulario">
+                <h3 id="novaTransacao">Nova Transação</h3>
+                <div><label class="label1">Tipo da Transação</label></div>
+                <div><select class="select1"><option>Compra</option><option>Venda</option></select></div>
+                <div><label class="label2">Nome da Mercadoria</label></div>
+                <div><input type="text" class="input1" placeholder="Ex. Jóia"></div>
+                <div><label class="label3">Valor da transação</label></div>
+                <div><input type="text" class="input2" placeholder="R$"></div>
+            </div>
+            <div class="buttom-container">
+                <button type="button" class="button">
                 <span class="button_text">Adicionar transação</span>
             </button>
-        </div>
+            </div>
+    </form>
 
-        <div class="extrato">
-            <table class=" w3-table w3-bordered " , id="tabela_Extrato">
-                <!--Tabela para extrato-->
-                <h2>Extrato de transações</h2>
+    <div class="extrato">
+        <table class=" w3-table w3-bordered " , id="tabela_Extrato">
+            <!--Tabela para extrato-->
+            <h2>Extrato de transações</h2>
 
-                <thead>
-                    <tr>
-                        <th></th>
-                        <th colspan="2">Mercadoria</th>
-                        <th>Valor</th>
-                    </tr>
-                </thead>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th colspan="2">Mercadoria</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
 
-                <tbody>
-                    <tr>
-                        <th>+</th>
-                        <th>Lorem ipsum</th>
-                        <th></th>
-                        <th>R$ 12.999,00</th>
-                    </tr>
-                    <tr>
-                        <th>-</th>
-                        <th>consectetur</th>
-                        <th></th>
-                        <th>R$ 99,99</th>
-                    </tr>
-                    <tr>
-                        <th>+</th>
-                        <th>Sed malesuada</th>
-                        <th></th>
-                        <th>R$ 9,99</th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <th></th>
-                        <th><strong>Total</strong></th>
-                        <th></th>
-                        <th>R$12.909,99</th>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
+            <tbody>
+                <tr>
+                    <th>+</th>
+                    <th>Lorem ipsum</th>
+                    <th></th>
+                    <th>R$ 12.999,00</th>
+                </tr>
+                <tr>
+                    <th>-</th>
+                    <th>consectetur</th>
+                    <th></th>
+                    <th>R$ 99,99</th>
+                </tr>
+                <tr>
+                    <th>+</th>
+                    <th>Sed malesuada</th>
+                    <th></th>
+                    <th>R$ 9,99</th>
+                </tr>
+                <tr>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th></th>
+                    <th><strong>Total</strong></th>
+                    <th></th>
+                    <th>R$12.909,99</th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     </div>
 
     <footer>
-        <div>
-        </div>
     </footer>
 
 

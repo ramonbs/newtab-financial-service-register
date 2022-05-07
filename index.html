@@ -16,8 +16,6 @@
 
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="css/estilo.css">
-
-
 </head>
 
 <body>
@@ -25,12 +23,18 @@
         <div class="header-container">
             <div class="logo-container">
                 <img id="img1" src="ellipse13.png" alt="quadrado, triângulo, círculo e uma pessoa">
-                <div>
-                    <h2 id="controleFinanceiro">Controle Financeiro</h2>
-                </div>
+            </div>
+
+            <div>
+                <h2 id="controleFinanceiro">Controle Financeiro</h2>
             </div>
 
             <nav class="menu-container">
+                <div class="mobile-menu">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
                 <div class="cadastro">Cadastro de transações</div>
                 <img src="Line.png">
                 <div class="limpar">Limpar dados</div>
@@ -39,22 +43,19 @@
     </header>
 
     <div class="body-container">
-        <form>
-            <div class="form-container">
-                <div class="formulario">
-                    <h2 class="subtitle">Nova Transação</h2>
-                    <div><label>Tipo da Transação</label></div>
-                    <div><select><option>Compra</option><option>Venda</option></select></div>
-                    <div><label>Nome da Mercadoria</label></div>
-                    <div><input type="text" placeholder="Ex. Jóia"></div>
-                    <div><label>Valor da transação</label></div>
-                    <div><input type="text" placeholder="R$"></div>
-                    <div class="buttom-container">
-                        <button type="button" class="button"><span class="button_text">Adicionar transação</span></button>
-                    </div>
+        <form class="form-container">
+            <div class="formulario">
+                <h2 class="subtitle">Nova Transação</h2>
+                <div><label>Tipo da Transação</label></div>
+                <div><select><option>Compra</option><option>Venda</option></select></div>
+                <div><label>Nome da Mercadoria</label></div>
+                <div><input type="text" placeholder="Ex. Jóia"></div>
+                <div><label>Valor da transação</label></div>
+                <div><input type="text" placeholder="R$"></div>
+                <div class="buttom-container">
+                    <button type="button" class="button"><span class="button_text">Adicionar transação</span></button>
                 </div>
             </div>
-
         </form>
 
         <div class="extrato-container">
@@ -102,10 +103,10 @@
             </table>
         </div>
     </div>
-
-    <footer>
-    </footer>
-
+    <script src="mobile-navbar.js"></script>
 </body>
+
+<footer>
+</footer>
 
 </html>

@@ -20,43 +20,47 @@
 
 <body>
     <header>
-        <div class="header-container">
-            <div class="logo-container">
-                <img id="img1" src="ellipse13.png" alt="quadrado, triângulo, círculo e uma pessoa">
+        <nav>
+            <div class="full-logo">
+                <img class="logo-image" src="ellipse13.png">
             </div>
-
-            <div>
-                <h2 id="controleFinanceiro">Controle Financeiro</h2>
+            <a class="logo" href="/">Controle Financeiro</a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
-
-            <nav class="menu-container">
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <div class="cadastro">Cadastro de transações</div>
-                <img src="Line.png">
-                <div class="limpar">Limpar dados</div>
-            </nav>
-        </div>
+            <ul class="nav-list">
+                <li><a id="cadastro-buttom" href="/">Cadastro Transações</a></li>
+                <div class="line"></div>
+                <li><a id="limpar-buttom" href="/">Limpar dados</a></li>
+            </ul>
+        </nav>
     </header>
 
     <div class="body-container">
-        <form class="form-container">
-            <div class="formulario">
+        <div class="form-box">
+            <div class="subtitle-box">
                 <h2 class="subtitle">Nova Transação</h2>
-                <div><label>Tipo da Transação</label></div>
-                <div><select><option>Compra</option><option>Venda</option></select></div>
-                <div><label>Nome da Mercadoria</label></div>
-                <div><input type="text" placeholder="Ex. Jóia"></div>
-                <div><label>Valor da transação</label></div>
-                <div><input type="text" placeholder="R$"></div>
-                <div class="buttom-container">
-                    <button type="button" class="button"><span class="button_text">Adicionar transação</span></button>
+            </div>
+            <div class="form-row">
+                <div class="input-box">
+                    <label>Tipo da Transação</label>
+                    <select><option>Compra</option><option>Venda</option></select>
+                </div>
+                <div class="input-box">
+                    <label>Nome da Mercadoria</label>
+                    <input type="text" placeholder="Ex. Jóia">
+                </div>
+                <div class="input-box">
+                    <label>Valor da transação</label>
+                    <input type="text" placeholder="R$">
                 </div>
             </div>
-        </form>
+            <div class="buttom-container">
+                <button type="button" class="button"><span class="button_text">Adicionar transação</span></button>
+            </div>
+        </div>
 
         <div class="extrato-container">
             <table class=" w3-table w3-bordered " , id="tabela_Extrato">

@@ -42,7 +42,7 @@ nav {
     display: flex;
     align-items: center;
     text-align: center;
-    width: 100%;
+    width: 45%;
     height: 40px;
     list-style: none;
     background: #FFFFFF;
@@ -164,26 +164,36 @@ h2 {
     justify-content: center;
 }
 
-@media (max-width: 1112px) and (orientation: landscape) {}
+@media (max-width: 1112px) and (orientation: landscape) {
+    body {
+        overflow-x: hidden;
+    }
+    .nav-list {
+        margin-right: 20px;
+    }
+    .logo-image {
+        margin-left: 22px;
+    }
+}
 
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
     .nav-list {
+        position: absolute;
         display: flex;
-        flex-direction: column;
         top: 6vh;
         right: 0;
-        width: 100vw;
-        height: 190vh;
+        width: 50vw;
+        height: 94vh;
         background-color: #333333;
         padding: 10px;
         transform: translateX(100%);
         transition: transform 0.3s ease-in;
         align-content: space-between;
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: flex-end;
         flex-direction: column;
         margin-right: 0px;
     }
@@ -196,15 +206,12 @@ h2 {
         display: block;
     }
     .body-container {
-        display: flex;
-        flex-direction: column;
         flex-wrap: wrap;
-        align-content: space-around;
-        align-items: stretch;
-        justify-content: flex-start;
         width: 100%;
         height: 92vh;
         padding: 1rem;
+        align-items: flex-start;
+        align-content: flex-start;
     }
     .form-box {
         width: 100%;
@@ -233,7 +240,7 @@ h2 {
         transform: translateX(0);
     }
     .logo-image {
-        margin: 0px;
+        margin-left: 22px;
     }
     .logo {
         font-size: 24px;
@@ -280,6 +287,9 @@ h2 {
 }
 
 @media (max-width: 411px) {
+    body {
+        overflow-x: hidden;
+    }
     nav {
         display: flex;
         justify-content: space-around;
@@ -299,8 +309,6 @@ h2 {
     .form-box {
         display: flex;
         flex-direction: column;
-        align-items: inherit;
-        align-content: initial;
         width: 92%;
         height: 50%;
         background: #FFFFFF;
@@ -310,7 +318,7 @@ h2 {
         margin: 20px;
     }
     .extrato-container {
-        width: 50%;
+        width: 100%;
         height: 281px;
         text-align: center;
         justify-content: center;
@@ -333,6 +341,7 @@ h2 {
         font-size: 16px;
         font-weight: 400;
         cursor: pointer;
+        width: 100%;
     }
     .body-container {
         display: flex;
@@ -345,6 +354,9 @@ h2 {
         text-align: center;
     }
     .logo-image {
+        display: none;
+    }
+    #subtitle-1 {
         display: none;
     }
 }

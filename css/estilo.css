@@ -9,6 +9,9 @@ nav {
     height: 8vh;
 }
 
+
+/***************************************************************/
+
 .body-container {
     display: flex;
     justify-content: center;
@@ -24,6 +27,9 @@ nav {
     font-size: 18px;
     line-height: 22px;
 }
+
+
+/***************************************************************/
 
 .logo {
     font-size: 24px;
@@ -60,6 +66,9 @@ nav {
     height: 2px;
 }
 
+
+/***************************************************************/
+
 .mobile-menu div {
     width: 32px;
     height: 2px;
@@ -71,6 +80,9 @@ nav {
     cursor: pointer;
     display: none;
 }
+
+
+/***************************************************************/
 
 .form-box {
     box-sizing: border-box;
@@ -92,6 +104,10 @@ nav {
     justify-content: center;
     background: #FFFFFF;
     margin: 20px;
+}
+
+.value {
+    text-align: right;
 }
 
 .form-box div {
@@ -136,6 +152,9 @@ nav {
     margin-bottom: 20px;
 }
 
+
+/***************************************************************/
+
 .button {
     height: 30px;
     padding: 5px;
@@ -164,6 +183,9 @@ h2 {
     justify-content: center;
 }
 
+
+/***************************************************************/
+
 @media (max-width: 1112px) and (orientation: landscape) {
     body {
         overflow-x: hidden;
@@ -176,13 +198,15 @@ h2 {
     }
 }
 
+
+/***************************************************************/
+
 @media (max-width: 768px) {
     body {
         overflow-x: hidden;
     }
     .nav-list {
         position: absolute;
-        display: flex;
         top: 6vh;
         right: 0;
         width: 50vw;
@@ -190,12 +214,14 @@ h2 {
         background-color: #333333;
         padding: 10px;
         transform: translateX(100%);
-        transition: transform 0.3s ease-in;
         align-content: space-between;
         justify-content: flex-start;
         align-items: flex-end;
         flex-direction: column;
         margin-right: 0px;
+    }
+    .nav-list-transform {
+        transition: transform 0.3s ease-in;
     }
     .nav-list li {
         color: #FFFFFF;
@@ -247,7 +273,6 @@ h2 {
         letter-spacing: 4px;
         text-align: center;
     }
-    .form-row {}
     .form-box div {
         display: flex;
         flex-direction: row;
@@ -262,6 +287,9 @@ h2 {
         width: 200px
     }
 }
+
+
+/***************************************************************/
 
 @keyframes navLinkFade {
     from {
@@ -285,6 +313,13 @@ h2 {
 .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
 }
+
+.nav-list.active .line1 {
+    display: flex;
+}
+
+
+/***************************************************************/
 
 @media (max-width: 411px) {
     body {
